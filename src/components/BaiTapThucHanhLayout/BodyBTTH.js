@@ -4,9 +4,44 @@ import ItemBTTH from './ItemBTTH';
 
 export default class BodyBTTH extends Component {
   render() {
-    return <div>
+    return <div className="container">
         <BannerBTTH />
-        <ItemBTTH />
+        
+        <div className="row">
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+          
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+        </div>
+        
+        <div className="row">
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+
+          <div className="col-3">            
+            <ItemBTTH />
+          </div>
+        </div>
     </div>;
   }
 }
