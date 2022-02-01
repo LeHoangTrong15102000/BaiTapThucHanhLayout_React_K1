@@ -4,6 +4,7 @@ import BaiTapThucHanhLayout from './components/BaiTapThucHanhLayout/BaiTapThucHa
 import DataBinding from './DataBinding/DataBinding';
 import DataBindingRFC from './DataBinding/DataBindingRFC';
 import HandleEvent from './HandleEvent/HandleEvent';
+import RenderingCondition from './RenderingConditions/RenderingCondition';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       {/* <DataBinding />
       <DataBindingRFC /> */}
 
-      <HandleEvent />
+      {/* <HandleEvent /> */}
+
+      <RenderingCondition />
     </div>
   );
 }
