@@ -26,12 +26,22 @@ export default class HandleEvent extends Component {
   }
 
   render() {
+    // Đối với functional thì nó sẽ định nghĩa ở trong đây
+    const handleClickFunction = (name) => {
+      alert("Hello " + name)
+    }
     return <div>
-      <button onClick={() => {
+
+      <button id="btnClickMe" onClick={() => {
+        handleClickFunction("Le Hoang Trong Trem Trem")
+      }}>CLick me!!</button>
+
+      <button id="btnClickMe1" onClick={() => {
         this.handleClick("Le Hoang Trong")
       }}>CLick me!!</button>
 
-      <button id="btnClickMe" class="" onCLick={this.handleClickParam.bind(this, "Huynh Thi Bích Tram")}></button>
+      <button id="btnClickMe2" class="" onCLick={this.handleClickParam.bind(this, "Huynh Thi Bích Tram")}>CLick</button>
+
     </div>;
   }
 }
