@@ -5,14 +5,26 @@ import './App.css';
 // import DataBindingRFC from './DataBinding/DataBindingRFC';
 import HandleEvent from './HandleEvent/HandleEvent';
 import RenderingCondition from './RenderingConditions/RenderingCondition';
+
 import StateDemo from './State/StateDemo';
+import Styling from './Styling/Styling';
 
 function App() {
   return (
     <div className="App">
       {/* <HandleEvent /> */}
       {/* <RenderingCondition /> */}
-      <StateDemo />
+      {/* <StateDemo /> */}
+
+      {/* <BaiTapThucHanhLayout /> */}
+      {/* <DataBinding />
+      <DataBindingRFC /> */}
+
+      {/* <HandleEvent /> */}
+
+      {/* <RenderingCondition /> */}
+      <Styling />
+      <p className="txt">Huỳnh Thị Bích Trâm</p>
     </div>
   );
 }
