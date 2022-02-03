@@ -24,3 +24,7 @@
 //      - Cách thứ 2: Module style
 // + Nếu chúng ta muốn CSS đó chỉ ảnh hưởng đến cái components đó thôi.(hạn chế được việc đụng css với nhau) => Luôn luôn ưu tiên css của module đó cho components đó thôi nếu có css khác đè vào thì nó vẫn ưu tiên.
 //      - Cách thứ 3: là style trực tiếp trên thẻ đó. : Trong react nó sẽ sinh ra cho chúng ta thuộc tính tên là style: , chúng ta sẽ viết css giống như chúng ta khai báo đối tượng trong css
+
+// BT chọn xe
+// Hỡ có cái gì đó render lại thì chúng ta sử dụng phương thức state\
+// Đâu tiên chúng ta sẽ tạo giao diện và bố cục layout bằng components -> đơn giản chỉ cần thực hiện nó với js (BaiTapChonXe.js)

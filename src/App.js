@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import BaiTapChonXe from './BaiTapChonXe/BaiTapChonXe';
 // import BaiTapThucHanhLayout from './components/BaiTapThucHanhLayout/BaiTapThucHanhLayout';
 // import DataBinding from './DataBinding/DataBinding';
 // import DataBindingRFC from './DataBinding/DataBindingRFC';
@@ -23,8 +24,10 @@ function App() {
       {/* <HandleEvent /> */}
 
       {/* <RenderingCondition /> */}
-      <Styling />
-      <p className="txt">Huỳnh Thị Bích Trâm</p>
+      {/* <Styling />
+      <p className="txt">Huỳnh Thị Bích Trâm</p> */}
+
+      <BaiTapChonXe />
     </div>
   );
 }
