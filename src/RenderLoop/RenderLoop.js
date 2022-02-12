@@ -77,6 +77,39 @@ export default class RenderLoop extends Component {
     return mangTrComponent;
   };
 
+  // Tiếp theo sẽ render giao diện với phương thức là map
+  // Map() thực thi khi mà chúng ta sử dụng một mảng dữ liệu và render ra mảng dữ liệu mới
+
+  // Những cái component được tạo ra từ vòng lặp for hoặc map thì đều phải có đối tượng là key={}
+  renderTable1 = () => {
+    let contentTable = this.productList.map((product, index) => {
+      // từ dữ liệu sản phẩm tạo ra 1 tag component <tr> chứa thông tin sản phẩm
+
+      return (
+        <tr key={index}>
+          <td>{product.id}</td>
+          <td>{product.name}</td>
+          <td>{product.price}</td>
+          <td>
+            <img
+              style={{ width: '150px', height: '100px' }}
+              src={product.img}
+              alt="ImgSource"
+            />
+          </td>
+          <td>
+            <button className="btn btn-primary mr-2">Chỉnh Sửa</button>
+            <button className="btn btn-danger">Xóa</button>
+          </td>
+        </tr>
+      );
+    });
+
+    return contentTable;
+  };
+
+  // Bài tập render With map components
+
   render() {
     return (
       <div>
@@ -91,7 +124,10 @@ export default class RenderLoop extends Component {
                 <th></th>
               </tr>
             </thead>
-            <tbody>{this.renderTable()}</tbody>
+            <tbody>
+              {this.renderTable()}
+              {this.renderTable1()}
+            </tbody>
           </table>
         </div>
 
