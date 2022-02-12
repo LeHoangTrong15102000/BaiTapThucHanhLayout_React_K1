@@ -28,3 +28,6 @@
 // BT chọn xe
 // Hỡ có cái gì đó render lại thì chúng ta sử dụng phương thức state\
 // Đâu tiên chúng ta sẽ tạo giao diện và bố cục layout bằng components -> đơn giản chỉ cần thực hiện nó với js (BaiTapChonXe.js)
+
+// Bài giảng tiếp theo chúng ta sẽ học về render giao diện với loop
+// render loop trong reactjs là một kĩ thuật rất hay dùng(có thể dùng loop rồi sau nay sẽ dùng phương thức map trong array).
