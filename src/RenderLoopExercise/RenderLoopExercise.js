@@ -13,23 +13,23 @@ export default class RenderLoopExercise extends Component {
   renderFilms = () => {
     let contentFilms = DataFilms.map((film, index) => {
       return (
-        <div className="col-3" key={index}>
+        <div className="col-3 mt-3" key={index}>
           <div
-            className="card text-white bg-primary"
-            style={{ width: '200px' }}
+            className="card text-white bg-dark"
+            style={{ width: '250px' }}
           >
             <img
-              style={{ width: '200px', height: '300px' }}
+              style={{ width: '250px', height: '350px' }}
               className="card-img-top"
               src={film.hinhAnh}
               alt={film.tenPhim}
             />
             <div className="card-body">
-              <h4 style={{ fontSize: '17px' }} className="card-title">
+              <h4 style={{ fontSize: '17px', height: '50px' }} className="card-title">
                 {film.tenPhim}
               </h4>
-              <p styl={{ fontSize: '13px' }} className="card-text">
-                {film.moTa}
+              <p styl={{ fontSize: '13px', height: '50px' }} className="card-text">
+                {film.moTa.length > 80 ? <p>{film.moTa.substr(0,80)} ... </p> : <p>film.moTa</p> }
               </p>
             </div>
           </div>
