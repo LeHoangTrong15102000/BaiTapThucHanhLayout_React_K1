@@ -10,14 +10,16 @@ export default class RenderLoopExercise extends Component {
   // Bước 2 : Xây dựng hàm render films ra giao diện
   // DataFilms nằm ngoài thì nó là biến toàn cục nên không sử dụng this
 
+  // Sau này sẽ sử dụng một số thư viện hỗ trợ trong quá trình CSS về UI
+  // Review về kiến thức
+
+  // Định nghĩa trực tiếp bằng arrow function ngay tại thuộc tính sự kiện (ví dụ như: onClick = () => {gọi hàm();}) Hàm này chỉ được gọi khi chúng ta nhấn vào nút sự kiện
+  // Xử lý sự kiện nên dùng cách 1 là định nghĩa trực tiếp trên thẻ
   renderFilms = () => {
-    let contentFilms = DataFilms.map((film, index) => {
+    return DataFilms.map((film, index) => {
       return (
-        <div className="col-3 mt-3" key={index}>
-          <div
-            className="card text-white bg-dark"
-            style={{ width: '250px' }}
-          >
+        <div className="col-2 mt-3" key={index}>
+          <div className="card text-white bg-dark" style={{ width: '250px' }}>
             <img
               style={{ width: '250px', height: '350px' }}
               className="card-img-top"
@@ -25,19 +27,27 @@ export default class RenderLoopExercise extends Component {
               alt={film.tenPhim}
             />
             <div className="card-body">
-              <h4 style={{ fontSize: '17px', height: '50px' }} className="card-title">
+              <h4
+                style={{ fontSize: '17px', height: '50px' }}
+                className="card-title"
+              >
                 {film.tenPhim}
               </h4>
-              <p styl={{ fontSize: '13px', height: '50px' }} className="card-text">
-                {film.moTa.length > 80 ? <p>{film.moTa.substr(0,80)} ... </p> : <p>film.moTa</p> }
+              <p
+                style={{ fontSize: '13px', height: '50px' }}
+                className="card-text"
+              >
+                {film.moTa.length > 80 ? (
+                  <p>{film.moTa.substr(0, 80)} ... </p>
+                ) : (
+                  <p>film.moTa</p>
+                )}
               </p>
             </div>
           </div>
         </div>
       );
     });
-
-    return contentFilms;
   };
   render() {
     // biến thì phải khai báo ở bên trong chỉ có thuộc tính mới khai báo ở ngoài
