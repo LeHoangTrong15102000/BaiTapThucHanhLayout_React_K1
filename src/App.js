@@ -11,6 +11,7 @@ import RenderLoopExercise from './RenderLoopExercise/RenderLoopExercise';
 
 import StateDemo from './State/StateDemo';
 import Styling from './Styling/Styling';
+import TryGlasses from './TryGlasses/TryGlasses';
 
 function App() {
   return (
@@ -31,7 +32,9 @@ function App() {
 
       {/* <RenderLoop /> */}
 
-      <RenderLoopExercise />
+      {/* <RenderLoopExercise /> */}
+
+      <TryGlasses />
     </div>
   );
 }
