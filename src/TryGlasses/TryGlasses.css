@@ -1,0 +1,13 @@
+@keyframes animChangeGlasses {
+  from {
+    width: 0;
+  }
+  to {
+    width: 150px;
+  }
+}
+
+.glassesStyle {
+  width: 250px;
+  animation: animChangeGlasses 0.5s;
+}
