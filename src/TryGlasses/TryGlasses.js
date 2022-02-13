@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import dataGlasses from '../Data/dataGlasses.json'
 
 export default class TryGlasses extends Component {
 
@@ -16,6 +17,21 @@ export default class TryGlasses extends Component {
   // Để cai desc phía dưới tấm hình
 
   // Bước 2: Render những kính bên dưới, cách thức chọn kính và tổ chức dữ liệu như thế nào
+  // Load những phần dữ liệu của giao diện JSON ra
+
+
+
+  // Viết hàm render ra giao diện người dùng 
+  renderGlassesList = () => {
+    return dataGlasses.map((glassesItem, index) => {
+      return <img className="ml-2 p-2 border border-width-1" key={index} style={{width: '110px', cursor: 'pointer'}} src={glassesItem.url} alt="ImgGlasses"/>
+    })
+  }
+
+
+  // Bước 3 viết hàm xử lý sử kiện click cho giao diện và xử lý state cho mắt kính
+
+
   render() {
 
     const styleGlasses = {
@@ -35,6 +51,8 @@ export default class TryGlasses extends Component {
       backgroundColor: 'rgba(255,127,0,0.5)',
       textAlign: 'left',
     }
+
+
     
     return (
       <div style={{backgroundImage: 'url(./glassesImage/background.jpg)' ,backgroundSize: '2000px', minHeight: '2000px'}}>
@@ -58,7 +76,13 @@ export default class TryGlasses extends Component {
               <div className="col-6">
                 <img style={{width: '250px'}} src="./glassesImage/model.jpg" alt="model-2"/>
               </div>
-            </div>
+            </div>           
+          </div>
+
+          {/* Chứa nội dung của danh sách các kính */}
+          <div className="bg-light mt-5 p-5 container text-center d-flex justify-content-center">
+            {/* Gọi hàm RenderGlassesList */}
+            {this.renderGlassesList()}
           </div>
         </div>
       </div>
