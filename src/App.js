@@ -2,6 +2,7 @@
 import './App.css';
 
 import BaiTapThucHanhLayout from './components/BaiTapThucHanhLayout/BaiTapThucHanhLayout';
+import Home from './Exercise2/Home';
 // import DataBinding from './DataBinding/DataBinding';
 // import DataBindingRFC from './DataBinding/DataBindingRFC';
 import HandleEvent from './HandleEvent/HandleEvent';
@@ -16,6 +17,7 @@ import TryGlasses from './TryGlasses/TryGlasses';
 function App() {
   return (
     <div className="App">
+      <Home />
       {/* <HandleEvent /> */}
       {/* <RenderingCondition /> */}
       {/* <StateDemo /> */}
@@ -34,7 +36,7 @@ function App() {
 
       {/* <RenderLoopExercise /> */}
 
-      <TryGlasses />
+      {/* <TryGlasses /> */}
     </div>
   );
 }
