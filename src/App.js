@@ -13,11 +13,12 @@ import RenderLoopExercise from './RenderLoopExercise/RenderLoopExercise';
 import StateDemo from './State/StateDemo';
 import Styling from './Styling/Styling';
 import TryGlasses from './TryGlasses/TryGlasses';
+import SelectCar from './SelectCar/SelectCar';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      {/* <Home /> */}
       {/* <HandleEvent /> */}
       {/* <RenderingCondition /> */}
       {/* <StateDemo /> */}
@@ -37,6 +38,8 @@ function App() {
       {/* <RenderLoopExercise /> */}
 
       {/* <TryGlasses /> */}
+
+      <SelectCar />
     </div>
   );
 }
