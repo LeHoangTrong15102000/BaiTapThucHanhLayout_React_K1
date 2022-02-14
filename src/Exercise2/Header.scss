@@ -1,31 +1,7 @@
-$color-1: #2675d8;
-$color-2: #000000;
-$color-2-200: rgba(0,0,0,0.2);
+//  Dùng cú pháp import riêng của sass
+@import '../assets/scss/_variable.scss';
 
 
-
-$text-xs: 12px;
-$text-sm: 14px;
-$text-base: 16px;
-$text-md: 20px;
-$text-lg: 24px;
-$text-xl: 30px;
-$text-2xl: 40px;
-$text-3xl: 60px;
-
-
-$text-light: 300;
-$text-regular: 400;
-$text-medium: 500;
-$text-bold: 700;
-$text-black: 900;
-
-// mixin: text, button, table, input,...
-@mixin text($fontsize, $fontweight, $color) {
-    font-size: $fontsize;
-    font-weight: $fontweight;
-    color: $color;
-}
 // Trong React khi làm thực tế thi người ta tạo text, button thành một component riêng để khi cần sử dụng thì người ta sẽ import vào 
 
 .header {

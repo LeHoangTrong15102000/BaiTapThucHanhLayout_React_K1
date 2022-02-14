@@ -1,0 +1,45 @@
+@import '../assets/scss/_variable.scss';
+
+.carousel {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 100px 0;
+
+    .container {
+        max-width: 1280px;
+        margin: auto;// là để căn giữa nó
+        display: flex;
+        justify-content: space-between;
+        align-items: center; // căn giữa theo chiều trục phụ
+
+        .content {
+            width: 50%;
+
+            h1 {
+                @include text($color-1, $text-3xl, $text-bold)
+            }
+
+            span {
+                @include text($color-2, $text-md, $text-medium)
+            }
+
+            p {
+                @include text($color-2, $text-sm, $text-light)
+            }
+
+
+            button {
+                
+            }
+        }
+
+        .thumbnail {
+            width: 50%;
+
+            img {
+                width: 100%;//để nó rộng bằng thằng cha nó thôi
+            }
+        }
+    }
+}
