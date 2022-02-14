@@ -28,7 +28,7 @@ function App() {
 
       {/* <RenderingCondition /> */}
       {/* <Styling />
-      <p className="txt">Huỳnh Thị Bích Trâm</p> */}
+      <p className="txt"></p> */}
 
       {/* <RenderLoop /> */}
 
