@@ -11,12 +11,24 @@ export default class SelectCar extends Component {
   // Thực hiện chức năng chọn màu xe
   // Thực hiện chức năng chọn bánh xe
   // Thực hiện chức năng xoay xe sử dụng thư viện js-cloudimage-360-view
-
+  
   // Một cái giao diện xây dựng website thì cái content rất là quan trọng, sẽ có người build content riêng còn chúng ta sẽ là người phát triển sản phẩm(developer)
   //  Render ra các icon bên phía tay phải của chúng ta
-
+  
   // Các dữ liệu này phải render động theo dữ liệu được truyền vào
-  // Gắn sư kiện onclick cho icon để khi click vào chúng ta sẽ render lại giao diện hình ảnh của xe 
+  // Gắn sư kiện onclick cho icon để khi click vào chúng ta sẽ render lại giao diện hình ảnh của xe
+
+
+  // Xử lý nghiệp vụ khi mà click vào màu xe thì nó sẽ thay đổi hình ảnh
+  // Khi mà click vào thì chúng ta sẽ lấy cái item mà nó render ra
+    // Nhiệm vụ bây giờ là click vào những icon màu và đổi màu cho xe = cách set lại giá trị mới cho carCurrent từ carItem
+  changeColorCar = (newCar) => {
+    this.setState({
+      // set lại giá trị cho carCurrent bằng màu sẽ click hiện tại
+      carCurrent: newCar
+    })
+  }
+
   renderIcon = () => {
     return dataFeatures.map((item, index) => {
       return (
@@ -118,15 +130,6 @@ export default class SelectCar extends Component {
     }
   }
   
-  // Xử lý nghiệp vụ khi mà click vào màu xe thì nó sẽ thay đổi hình ảnh
-  // Khi mà click vào thì chúng ta sẽ lấy cái item mà nó render ra
-    // Nhiệm vụ bây giờ là click vào những icon màu và đổi màu cho xe = cách set lại giá trị mới cho carCurrent từ carItem
-  changeColorCar = (newCar) => {
-    this.setState({
-      // set lại giá trị cho carCurrent bằng màu sẽ click hiện tại
-      carCurrent: newCar
-    })
-  }
 
 
   // Nhưng mà khi viết vào rồi mà nó vẫn không thay đổi thì chúng ta sẽ tìm hiểu thêm một lifeCycle nữa
@@ -138,7 +141,7 @@ export default class SelectCar extends Component {
     // Lưu ý: Không được phép setState tại component này => Nếu mà setState trong đây thì nó sẽ bị vòng lặp vô tận
 
     // clear các canvas khi mà nó tạo ra trước đó, clear ảnh cũ
-    // document.querySelector("#carCurrent").innerHTML = '';// Nếu có thẻ thì clear và cho nó là rỗng
+    document.querySelector('#carCurrent').innerHTML = '';// Nếu có thẻ thì clear và cho nó là rỗng
 
 
     // Thì ở đây chúng ta sẽ lại tạo ra một thẻ script tiếp tục append vào giao diện nữa => sau khi state thay đổi
@@ -148,7 +151,7 @@ export default class SelectCar extends Component {
 
 
     // Clear script cũ trước khi append script mới của thư viện vào
-    document.querySelector("#appendScript").innerHTML = '';
+    document.querySelector('#appendScript').innerHTML = '';
     document.querySelector('#appendScript').appendChild(tagScript);
 
 
@@ -170,6 +173,8 @@ export default class SelectCar extends Component {
   // Nhưng có một điều là mỗi lần nhấn vào thì nó sẽ hiện ra một canvas mới => mỗi lần append thì nó sẽ tác dụng lên cái script , khi mà chọt code của nó thì phải hiểu luồn đi của nó 
   // Đó là kinh nghiệm của làm nhiều dự án -> những kĩ thuật tích góp sau nhiều năm đi làm
 
+
+  // Viết hàm xử lý bánh xe cho Xe
 
 
 
