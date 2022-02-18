@@ -18,7 +18,7 @@ import SelectCar from './SelectCar/SelectCar';
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
+      <Home />
       {/* <HandleEvent /> */}
       {/* <RenderingCondition /> */}
       {/* <StateDemo /> */}
@@ -39,7 +39,7 @@ function App() {
 
       {/* <TryGlasses /> */}
 
-      <SelectCar />
+      {/* <SelectCar /> */}
     </div>
   );
 }

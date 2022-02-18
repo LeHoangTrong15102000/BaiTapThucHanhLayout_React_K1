@@ -25,13 +25,20 @@
             }
 
             p {
-                @include text($color-2, $text-sm, $text-light)
+                @include text($color-2, $text-sm, $text-light);
+                margin: 20px 0;
             }
 
 
-            button {
+           
+                
+            .btn-info {
                 
             }
+
+
+            .btn-shop{}
+            
         }
 
         .thumbnail {

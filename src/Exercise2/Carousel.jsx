@@ -18,10 +18,10 @@ export default class Carousel extends Component {
                 </p>
 
                 <button>
-                    <i class="fa fa-info-circle"></i> More Info
+                    <i class="fa fa-info-circle btn-info"></i> More Info
                 </button>
                 <button>
-                    <i class="fa fa-shopping-cart"></i> Shop
+                    <i class="fa fa-shopping-cart btn-shop"></i> Shop
                 </button>
             </div>
 

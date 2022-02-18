@@ -12,7 +12,7 @@ export default class Home extends Component {
         <Header />
         <Carousel />
         <ProductList />
-        <ProductItem />
+       
         <Footer />
       </div>
     )
