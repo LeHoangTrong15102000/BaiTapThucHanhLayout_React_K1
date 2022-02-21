@@ -1,6 +1,7 @@
 $color-1: #2675d8;
 $color-2: #000000;
 $color-2-200: rgba(0,0,0,0.2);
+$color-3: #ffffff;
 
 
 
@@ -21,7 +22,7 @@ $text-bold: 700;
 $text-black: 900;
 
 // mixin: text, button, table, input,...
-@mixin text( $color,$fontsize, $fontweight,) {
+@mixin text( $color,$fontsize: $text-base, $fontweight: $text-regular) {
     color: $color;
     font-size: $fontsize;
     font-weight: $fontweight;
@@ -33,7 +34,7 @@ $text-black: 900;
     align-items: $align-items;
 }
 
-@mixin button($bg-color, $color,$border, $border-radius, $padding, $font-size, $font-weight) {
+@mixin button($bg-color, $color,$border, $border-radius, $padding, $font-size: $text-sm, $font-weight: $text-regular) {
     background-color: $bg-color;
     color: $color;
     border: $border;

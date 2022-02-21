@@ -33,11 +33,23 @@
            
                 
             .btn-info {
+
+                @include button(transparent, $color-1, 1px solid $color-1, 10px , 10px 30px)
+
+                
                 
             }
 
+            .btn-info:hover {
+                opacity: 0.7;
+            }
 
-            .btn-shop{}
+
+            .btn-shop{
+                @include button($color-1, $color-3, 1px solid $color-1, 10px, 10px 30px)
+
+               
+            }
             
         }
 
