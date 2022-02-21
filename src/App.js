@@ -14,11 +14,13 @@ import StateDemo from './State/StateDemo';
 import Styling from './Styling/Styling';
 import TryGlasses from './TryGlasses/TryGlasses';
 import SelectCar from './SelectCar/SelectCar';
+import DataBind from './BindingData/DataBind';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <DataBind />
+      {/* <Home /> */}
       {/* <HandleEvent /> */}
       {/* <RenderingCondition /> */}
       {/* <StateDemo /> */}
