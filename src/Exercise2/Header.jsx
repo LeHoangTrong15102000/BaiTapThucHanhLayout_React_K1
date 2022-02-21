@@ -4,7 +4,7 @@ import './Header.scss'
 export default class Header extends Component {
   render() {
     return (
-      <header className="header">
+      <header  className="header">
         <div className="container">
             <a href="#" className="logo">CyberPhone</a>
 

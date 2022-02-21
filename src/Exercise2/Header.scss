@@ -5,9 +5,59 @@
 // Trong React khi làm thực tế thi người ta tạo text, button thành một component riêng để khi cần sử dụng thì người ta sẽ import vào 
 
 .header {
-
+    height: 100px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }
 
 .container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;// là cách đều 2 bên
+    align-items: center;
+    height: 100%;
+
+
+    .logo {
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-1;
+    }
+
+    .navbar {
+
+        a {
+            font-size: 18px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000000;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $color-1;
+                transition: all 0.4s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            &:hover {
+                color: $color-1;
+            }
+        }
+
+
+
+        
+    }
     
 }
