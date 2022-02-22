@@ -19,8 +19,8 @@ import DataBind from './BindingData/DataBind';
 function App() {
   return (
     <div className="App">
-      <DataBind />
-      {/* <Home /> */}
+      {/* <DataBind /> */}
+      <Home />
       {/* <HandleEvent /> */}
       {/* <RenderingCondition /> */}
       {/* <StateDemo /> */}

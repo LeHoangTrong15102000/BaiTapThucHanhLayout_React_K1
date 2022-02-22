@@ -34,8 +34,8 @@
                 
             .btn-info {
 
-                @include button(transparent, $color-1, 1px solid $color-1, 10px , 10px 30px)
-
+                @include button(transparent, $color-1, 1px solid $color-1, 10px , 10px 30px);
+                margin-right: 15px;
                 
                 
             }
