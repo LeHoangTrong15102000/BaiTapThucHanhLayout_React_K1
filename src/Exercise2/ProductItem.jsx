@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
-import Product1 from '../assets/image/product1.png'
+import React, { Component } from 'react';
+import Product1 from '../assets/image/product1.png';
+import './ProductItem.scss';
 
 export default class ProductItem extends Component {
   render() {
     return (
       <div className="product-item">
-        <img src={Product1} alt="ImgProductItem"/>
+        <img src={Product1} alt="ImgProductItem" />
         <div className="heading">
-          <h1>CybearBeats</h1>
+          <h1>CyberBeats</h1>
           <p>$99.99</p>
         </div>
         <p className="category">Accessories</p>
@@ -26,6 +27,6 @@ export default class ProductItem extends Component {
           </button>
         </div>
       </div>
-    )
+    );
   }
 }

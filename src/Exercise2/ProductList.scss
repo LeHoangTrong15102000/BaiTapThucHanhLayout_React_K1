@@ -1,0 +1,12 @@
+@import '../assets/scss/_variable.scss';
+.productList {
+  text-align: center;
+
+  .container {
+    flex-direction: columns !important;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
